@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> home page</title>
+  </head>
+  <body>
+    <h1> Hello!. Welcome to our page</h1>
+  <form action="{% url 'contact'%}" >
+    {% csrf_token %}
+    <p>Pclass</p>
+    <input type="text" name="pclass">
+    <p>Sex</p>
+    <input type="text" name="sex">
+    <p>Age</p>
+    <input type="text" name="age">
+    <p>Sibsp</p>
+    <input type="text" name="sibsp">
+    <p>Parents/Children</p>
+    <input type="text" name="parch">
+    <p>Fare</p>
+    <input type="text" name="fare">
+    <p>Embarked</p>
+    <input type="text" name="embarked">
+    <p>Title</p>
+    <input type="text" name="title">
+    <input type="submit" value="submit here">
+    <a href="{% url 'contact'%}"> click here to go to contact page</a>
+  </form>
+
+  </body>
+</html>
